@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "es2021"
+    ],
+    "noEmit": true,
+    "emitDeclarationOnly": true,
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "types": [
+      "vite/client"
+    ]
+  },
+  "include": [
+    "src/lib.tsx",
+    "src/vite-env.d.ts",
+    "src/types.ts",
+    "src/components/**/*.tsx"
+  ]
+}

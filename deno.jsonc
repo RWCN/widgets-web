@@ -1,0 +1,35 @@
+{
+  "name": "@rwcn/widgets-web",
+  "exports": {
+    ".": "./src/lib.tsx"
+  },
+  "version": "0.0.1",
+  "license": "LGPL-3.0-only",
+  "tasks": {
+    "dev": "deno run -A --node-modules-dir npm:rolldown-vite@^6.3.7",
+    "lint": "deno run -A npm:oxlint@^0.16.8 --deny-warnings",
+    "build": "deno task lint && deno run -A --node-modules-dir npm:rolldown-vite@^6.3.7 build",
+    "preview": "deno run -A --node-modules-dir npm:rolldown-vite@^6.3.7 preview",
+    "serve": "deno run --allow-net --allow-read https://deno.land/std@0.157.0/http/file_server.ts dist/",
+    "fmt": "deno run --allow-read --allow-write=. --allow-sys=cpus --allow-env npm:prettier@^3.5.3 -cw **/*.ts **/*.tsx"
+  },
+  "compilerOptions": {
+    "lib": [
+      "esnext",
+      "deno.ns"
+    ]
+  },
+  "exclude": [
+    "dist"
+  ],
+  "imports": {
+    "@gapu/formix": "npm:@gapu/formix@^2.0.2",
+    "clsx": "npm:clsx@^2.1.1",
+    "csstype": "npm:csstype@^3.1.3",
+    "solid-js": "npm:solid-js@^1.9.5",
+    "zod": "npm:zod@^3.24.3"
+  },
+  "workspace": [
+    "src"
+  ]
+}

@@ -1,0 +1,20 @@
+:where(.btn) {
+  border-radius: 0.5rem;
+  border-width: 0;
+  font-weight: bold;
+  color: var(--primary);
+  background-color: var(--primary-200);
+  padding: 0.8rem 1.2rem;
+  font-size: large;
+  transition-duration: 0.5s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--primary-300);
+  }
+
+  &:active {
+    cursor: pointer;
+    background-color: var(--primary-100);
+  }
+}

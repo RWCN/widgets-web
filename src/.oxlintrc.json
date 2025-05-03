@@ -1,0 +1,13 @@
+{
+  "plugins": [
+    "import",
+    "typescript",
+    "unicorn"
+  ],
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "typescript/explicit-function-return-type": "warn"
+  }
+}

@@ -1,0 +1,17 @@
+:where(.row) {
+  display: flex;
+  flex-direction: row;
+
+  &:where(.reverse) {
+    flex-direction: row-reverse;
+  }
+}
+
+:where(.col) {
+  display: flex;
+  flex-direction: column;
+
+  &:where(.reverse) {
+    flex-direction: column-reverse;
+  }
+}
