@@ -3,7 +3,7 @@
   "exports": {
     ".": "./dist/lib.js"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "LGPL-3.0-only",
   "tasks": {
     "dev": "deno run -A --node-modules-dir npm:rolldown-vite@^6.3.7",
